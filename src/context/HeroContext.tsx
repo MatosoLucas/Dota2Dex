@@ -19,6 +19,8 @@ interface HeroContextData {
 
 // COMMENT TESTE
 
+// COMMENT TESTE 2
+
 const HeroContext = createContext({} as HeroContextData)
 
 export function HeroProvider({ children }: HeroProviderProps) {
