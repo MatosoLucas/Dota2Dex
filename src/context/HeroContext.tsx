@@ -17,6 +17,8 @@ interface HeroContextData {
   heroes: Array<HeroProps>
 }
 
+// COMMENT TESTE
+
 const HeroContext = createContext({} as HeroContextData)
 
 export function HeroProvider({ children }: HeroProviderProps) {
@@ -28,7 +30,7 @@ export function HeroProvider({ children }: HeroProviderProps) {
       const data = await response.json()
       setHeroes(data)
     }
-   fetchData()
+    fetchData()
   }, [])
 
   return (
